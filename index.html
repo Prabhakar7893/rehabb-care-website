@@ -359,7 +359,7 @@
 
         if (data[0].Status === "Success") {
           const postOffice = data[0].PostOffice[0];
-          cityInput.value = postOffice.District; // You can also use postOffice.Block or postOffice.Name
+          cityInput.value = postOffice.District; 
         } else {
           cityInput.value = "";
           alert("❌ Invalid Pincode. Please check and try again.");
@@ -389,7 +389,7 @@
     };
 
     try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbx7nlmO4CECuY3Rd5Unw1aZQtZoR3LIcH2O7QrSRr83JscYo05ThLdWMq4qpZLXb7IhNA/exec", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbwtaMK-bpvVcKLFbzfR7_ZqExD1TVzbkw1iT9hAANW2s9UQElSMukAMeSfAC172HDDLwA/exec", {
         method: "POST",
         mode: "no-cors",
         headers: { "Content-Type": "application/json" },
